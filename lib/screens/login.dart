@@ -19,6 +19,11 @@ class login extends StatelessWidget {
                     image: DecorationImage(
                         image: AssetImage('asset/images/man-fixing-motorcycle-modern-workshop_158595-8131.jpg'), fit: BoxFit.cover))
             ),
+
+
+
+
+
             Container(
               padding: EdgeInsets.only(left: 35, top: 130),
               child: Text(
