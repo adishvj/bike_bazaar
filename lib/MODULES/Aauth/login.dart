@@ -1,18 +1,19 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../../widgets/textbox.dart';
+
 class login extends StatelessWidget {
   const login({super.key});
 
   @override
   Widget build(BuildContext context) {
-
-    return  Scaffold(body:Container(
-      margin: EdgeInsets.all(20),
-      color: Colors.red,
-      child: Scaffold(
+    final emailcontroller = TextEditingController();
+    final passwordcontroller = TextEditingController();
 
 
+
+    return  Scaffold(
         backgroundColor: Colors.transparent,
         body: Stack(
           children: [
@@ -40,29 +41,18 @@ class login extends StatelessWidget {
                       margin: EdgeInsets.only(left: 35, right: 35),
                       child: Column(
                         children: [
-                          TextField(
-                            style: TextStyle(color: Colors.black),
-                            decoration: InputDecoration(
-                                fillColor: Colors.grey.shade100,
-                                filled: true,
-                                hintText: "Email",
-                                border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                )),
+                          Textbox(
+                            name:"enter email",
+                            controller:emailcontroller ,
                           ),
+
+
                           SizedBox(
                             height: 30,
                           ),
-                          TextField(
-                            style: TextStyle(),
-                            obscureText: true,
-                            decoration: InputDecoration(
-                                fillColor: Colors.grey.shade100,
-                                filled: true,
-                                hintText: "Password",
-                                border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                )),
+                          Textbox(
+                            name:"enter password",
+                            controller:passwordcontroller ,
                           ),
                           SizedBox(
                             height: 40,
@@ -129,7 +119,9 @@ class login extends StatelessWidget {
             ),
           ],
         ),
-      ),
-    ));
+
+    );
   }
 }
+
+
