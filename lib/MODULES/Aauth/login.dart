@@ -11,6 +11,8 @@ class login extends StatelessWidget {
       margin: EdgeInsets.all(20),
       color: Colors.red,
       child: Scaffold(
+
+
         backgroundColor: Colors.transparent,
         body: Stack(
           children: [
