@@ -20,7 +20,8 @@ class login extends StatelessWidget {
             Container(
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage('asset/images/man-fixing-motorcycle-modern-workshop_158595-8131.jpg'), fit: BoxFit.cover))
+                        image: AssetImage('asset/images/man-fixing-motorcycle-modern-workshop_158595-8131.jpg',), fit: BoxFit.cover,
+                    ),)
             ),
 
             Container(
@@ -120,7 +121,8 @@ class login extends StatelessWidget {
           ],
         ),
 
-    );
+    )
+    ;
   }
 }
 
